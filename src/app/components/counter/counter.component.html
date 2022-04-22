@@ -1,0 +1,13 @@
+<div class="container">
+    <h2 class="title">Counter</h2>
+    <div class="counter">
+        <button class="btn red" (click)="deduct()">-</button>
+        <p>{{counter}}</p>
+        <button class="btn green" (click)="add()">+</button>
+    </div>
+</div>
+
+<div *ngFor="let item of data" class="history">
+    <p>{{item.action}}</p>
+    <p>{{item.timeCreate}}</p>
+</div>
